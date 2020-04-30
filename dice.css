@@ -1,0 +1,14 @@
+div.dice{
+    width:32px;
+    background:greenyellow;
+    border:darkgreen 1px solid;
+    padding:90px;
+    font-size:24px;
+    text-align:center;
+    margin:5px auto;
+    horiz-align:center;
+}
+
+area.below{
+    horiz-align:center;
+}
