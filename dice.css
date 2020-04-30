@@ -22,3 +22,10 @@ button {
   div,h2{
       text-align: center;
   }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%
+  }
