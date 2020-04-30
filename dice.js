@@ -4,13 +4,9 @@ function rollingDice(){
     var status = document.getElementById("status");
     var d1 = Math.floor(Math.random() * 6) + 1;
     var d2 = Math.floor(Math.random() * 6) + 1;
-    console.log(d1);
-    console.log(d2);
     for(var first = 0; first <= d1; first++){
-        console.log(document.getElementById("1." + first));
         var x = document.getElementById("1." + first);
             if(x != null){
-                console.log(document.getElementById("1." + first));
                 x.style.color="red";
             }
     }
