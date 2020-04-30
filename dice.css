@@ -28,4 +28,5 @@ button {
     height: 30px;
     background: black;
     border-radius: 50%;
+    display:none;
   }
