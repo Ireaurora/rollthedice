@@ -4,6 +4,11 @@ function rollingDice(){
     var status = document.getElementById("status");
     var d1 = Math.floor(Math.random() * 6) + 1;
     var d2 = Math.floor(Math.random() * 6) + 1;
+    console.log(d1);
+    console.log(d2);
+    for(var first = 0; first <= 6; first++){
+        console.log("1." + first);
+    }
     var diceTotal = d1 + d2;
     die1.innerHTML = d1;
     die2.innerHTML = d2;
