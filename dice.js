@@ -6,8 +6,13 @@ function rollingDice(){
     var d2 = Math.floor(Math.random() * 6) + 1;
     console.log(d1);
     console.log(d2);
-    for(var first = 0; first <= 6; first++){
-        console.log("1." + first);
+    for(var first = 0; first <= d1; first++){
+        console.log(document.getElementById("1." + first));
+        var x = document.getElementById("1." + first);
+            if(x != null){
+                console.log(document.getElementById("1." + first));
+                x.style.color="red";
+            }
     }
     var diceTotal = d1 + d2;
     die1.innerHTML = d1;
