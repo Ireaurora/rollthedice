@@ -12,8 +12,29 @@ function rollingDice(){
     console.log(d2);
     if((die1 && die2) !=null){
     for(var i = 0; i < d1; i++){
-        die1.innerHTML= die1.innerHTML+'<div class="circle"></div>';
+        switch(i) {
+            case 0:
+                die1.innerHTML= '<div class="circle"></div>';
+                break;
+            case 1:
+                die1.innerHTML = 'Two';
+                break;
+            case 2:
+                die1.innerHTML = 'Three';
+                break;
+            case 3:
+                die1.innerHTML = 'Four';
+                break;
+            case 4:
+                die1.innerHTML = 'Five';
+                break;
+            case 5:
+                die1.innerHTML = 'Six';
+                break;
+            default:
+                die1.innerHTML = 'More than one';
     }
+}
     for(var i = 0; i < d2; i++){
         die2.innerHTML= die2.innerHTML+'<div class="circle"></div>';
     }
