@@ -4,8 +4,10 @@ function rollingDice(){
     var status = document.getElementById("status");
     var d1 = Math.floor(Math.random() * 6) + 1;
     var d2 = Math.floor(Math.random() * 6) + 1;
-    if((die1 && die2) !=null){
+    if(die1!=null){
         numbers(d1,die1);
+    }
+    if(die2!=null){
         numbers(d2,die2);
     }
     var diceTotal = d1 + d2;
@@ -16,34 +18,12 @@ function rollingDice(){
 }
 function numbers(number,die){
     die.innerHTML= "";
-    console.log(die.classList.length);
-    if (die.classList.contains("first-face")) {
-        console.log("here 1");
-        die.classList.remove("first-face");
+    var array = ["first-face","second-face","third-face","fourth-face","fifth-face","sixth-face"];
+    for(var i = 0; i < array.length; i++){
+        if (die.classList.contains(array[i])) {
+            die.classList.remove(array[i]);
+        }
     }
-    if (die.classList.contains("second-face")) {
-        console.log("here 2");
-        die.classList.remove("second-face");
-    }
-    if (die.classList.contains("third-face")) {
-        console.log("here 3");
-        die.classList.remove("third-face");
-    }
-    if (die.classList.contains("fourth-face")) {
-        console.log("here 4");
-        die.classList.remove("fourth-face");
-    }
-    if (die.classList.contains("fifth-face")) {
-        console.log("here 5");
-        die.classList.remove("fifth-face");
-    }
-    if (die.classList.contains("sixth-face")) {
-        console.log("here 6");
-        die.classList.remove("sixth-face");
-    }
-    console.log(die.classList.length);
-    console.log(die.classList.length);
-    console.log(die.classList);
     switch(number) {
         case 1:
             die.classList.add("first-face")
