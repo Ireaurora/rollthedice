@@ -12,6 +12,7 @@ function rollingDice(){
         status.innerHTML += " DOUBLES! You get a free turn!!";
     }
 }
+
 function numbers(number,die){
     die.innerHTML= "";
     var array = ["first-face","second-face","third-face","fourth-face","fifth-face","sixth-face"];
