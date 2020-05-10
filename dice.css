@@ -34,7 +34,6 @@ button {
   margin:5px auto;
   border: 2px black solid;
 }
-
 .circle{
   display: block;
   width: 24px;
@@ -42,32 +41,45 @@ button {
   border-radius: 50%;
   background-color:black;
 }
-
-.first-face{
+.first-face {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.second-face, .circle:nth-of-type(2), .third-face .circle:nth-of-type(1){
-  align-self :flex-end;
+.second-face{
+  display: flex ;
+  justify-content: space-between;
 }
 
-.third-face, .circle:nth-of-type(2){
-  align-self :center;
+.second-face .circle:nth-of-type(2) {
+  align-self: flex-end;
 }
 
-.second-face, .third-face, .fourth-face, .sixth-face, .fifth-face{
+.third-face {
   display: flex;
   justify-content: space-between;
 }
 
-.fourth-face .column, .sixth-face .column, .fifth-face .column{
+.third-face .circle:nth-of-type(1) {
+  align-self :flex-end;
+}
+
+.third-face .circle:nth-of-type(2) {
+  align-self :center;
+}
+
+.fourth-face , .sixth-face, .fifth-face{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-face .column , .sixth-face .column, .fifth-face .column{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.fifth-face .column:nth-of-type(2){
+.fifth-face .column:nth-of-type(2) {
   justify-content: center;
 }
