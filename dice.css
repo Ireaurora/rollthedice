@@ -6,13 +6,12 @@ html{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color:white;
 }
 h1{
-  color:white;
   text-align:center;
   margin-top:100px;
 }
-h2{color:white;}
 
 button {
     background-color: greenyellow; 
@@ -35,6 +34,7 @@ button {
   margin:5px auto;
   border: 2px black solid;
 }
+
 .circle{
   display: block;
   width: 24px;
@@ -42,45 +42,32 @@ button {
   border-radius: 50%;
   background-color:black;
 }
-.first-face {
+
+.first-face{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.second-face{
-  display: flex ;
-  justify-content: space-between;
-}
-
-.second-face .circle:nth-of-type(2) {
-  align-self: flex-end;
-}
-
-.third-face {
-  display: flex;
-  justify-content: space-between;
-}
-
-.third-face .circle:nth-of-type(1) {
+.second-face, .circle:nth-of-type(2), .third-face .circle:nth-of-type(1){
   align-self :flex-end;
 }
 
-.third-face .circle:nth-of-type(2) {
+.third-face, .circle:nth-of-type(2){
   align-self :center;
 }
 
-.fourth-face , .sixth-face, .fifth-face{
+.second-face, .third-face, .fourth-face, .sixth-face, .fifth-face{
   display: flex;
   justify-content: space-between;
 }
 
-.fourth-face .column , .sixth-face .column, .fifth-face .column{
+.fourth-face .column, .sixth-face .column, .fifth-face .column{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.fifth-face .column:nth-of-type(2) {
+.fifth-face .column:nth-of-type(2){
   justify-content: center;
 }
