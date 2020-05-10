@@ -4,8 +4,8 @@ function rollingDice(){
     var status = document.getElementById("status");
     var d1 = Math.floor(Math.random() * 6) + 1;
     var d2 = Math.floor(Math.random() * 6) + 1;
-    if(die1!=null){ numbers(d1,die1);}
-    if(die2!=null){ numbers(d2,die2);}
+    if(die1!=null){numbers(d1,die1);}
+    if(die2!=null){numbers(d2,die2);}
     var diceTotal = d1 + d2;
     status.innerHTML = "You rolled "+diceTotal+".";
     if(d1 == d2){
@@ -31,7 +31,7 @@ function numbers(number,die){
             break;
         case 3:
             die.classList.add("third-face")
-            die1.innerHTML = '<span class="circle"></span><span class="circle"></span><span class="circle"></span>';
+            die.innerHTML = '<span class="circle"></span><span class="circle"></span><span class="circle"></span>';
             break;
         case 4:
             die.classList.add("fourth-face")
@@ -47,4 +47,3 @@ function numbers(number,die){
             break;
         }
 }
-
