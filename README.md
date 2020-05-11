@@ -1,1 +1,1 @@
-# rollthedice for games
+#  🎲 Dice Roller 🎲

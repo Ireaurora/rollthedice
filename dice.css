@@ -1,5 +1,18 @@
 div,h2{text-align: center;}
 
+html{
+  background: url("background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:white;
+}
+h1{
+  text-align:center;
+  margin-top:100px;
+}
+
 button {
     background-color: greenyellow; 
     border: none;
@@ -9,6 +22,7 @@ button {
     text-align: center;
     font-size: 16px;
     margin: auto;
+    margin:10px;
   }
  
 .dice {
@@ -42,11 +56,6 @@ button {
   align-self: flex-end;
 }
 
-.third-face {
-  display: flex;
-  justify-content: space-between;
-}
-
 .third-face .circle:nth-of-type(1) {
   align-self :flex-end;
 }
@@ -55,8 +64,7 @@ button {
   align-self :center;
 }
 
-
-.fourth-face , .sixth-face, .fifth-face{
+.third-face , .fourth-face , .sixth-face, .fifth-face{
   display: flex;
   justify-content: space-between;
 }
